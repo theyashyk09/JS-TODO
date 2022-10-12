@@ -6,6 +6,10 @@ This is a todo app developed using html, css and javascript which lets you add y
 
 ## Video
 
+
+https://user-images.githubusercontent.com/109405477/195331333-00fa4de9-528e-4ca2-8f2f-700d54a87f72.mp4
+
+
 **Check it out at : https://todonoww.netlify.app/**
 
 ## 🚀 About Me
