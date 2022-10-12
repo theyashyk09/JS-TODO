@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #060917;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+
+.main {
+  border: 2px solid #435fff;
+  padding: 25px;
+  width: 95%;
+  max-width: 500px;
+  border-radius: 5px;
+  margin: 50px auto;
+  margin-top: 100px;
+}
+
+.heading {
+  text-align: center;
+  user-select: none;
+  color: #435fff;
+}
+
+.add {
+  margin-left: 20px;
+  border: 2px solid #435fff;
+  border-radius: 100px;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  cursor: pointer;
+  user-select: none;
+
+  color: #d4daf2;
+  font-weight: 400;
+}
+
+.add:hover {
+  background: #435fff;
+  color: #e6eaf7;
+  transition: all 0.2s ease-in-out;
+}
+
+.top-input {
+  width: 85%;
+  font-size: 19px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid #435fff;
+  outline: none;
+  font-family: Poppins, sans-serif;
+  background: none;
+  color: #d4daf2;
+}
+
+.top-input::placeholder {
+  color: #c8c9c999;
+}
+
+.top-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  width: 96%;
+  height: 5px;
+  margin: 30px auto;
+  margin-bottom: 10px;
+  background: #d4daf2;
+  border-radius: 100px;
+}
+
+.tasks {
+  margin-top: 30px;
+  color: #d4daf2;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #435fff;
+}
+
+.inputCb {
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+}
+
+.added-task {
+  width: 100%;
+  max-width: 75%;
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  outline: none;
+  font-family: Poppins, sans-serif;
+  color: #d4daf2;
+}
+
+.edit,
+.del {
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #d4daf2;
+  border-radius: 5px;
+  padding: 2px 4px;
+  border-radius: 100px;
+}
+
+.edit:hover,
+.del:hover {
+  background-color: #d4daf2;
+  transition: all 0.25s ease-in-out;
+}
+
+.del {
+  margin-left: 15px;
+}
+
+.switches {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.light-circle {
+  border: 2px solid #d4daf2;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.light-circle:hover {
+  background-color: #d4daf2;
+  transition: all 0.2s ease-in-out;
+}
+
+.dark-circle {
+  border: 2px solid #435fff;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.dark-circle:hover {
+  background-color: #435fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.light-btn {
+  color: #333333;
+  border-color: #333333;
+}
+
+.light-btn:hover {
+  background-color: #333333;
+  transition: all 0.2s ease-in-out;
+}
