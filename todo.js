@@ -13,7 +13,7 @@ function setTodoList() {
     }
 
     let todoContent = new Object();
-    todoContent.text = userTask.value.trim();
+    todoContent.todo = userTask.value.trim();
     todos.push(todoContent);
     localStorage.setItem("todos", JSON.stringify(todos));
     userTask.value = "";
@@ -31,7 +31,7 @@ function getTodoList() {
     const todoArr = JSON.parse(todoItems);
     todoList.textContent = "";
     todoArr.forEach((element, index) => {
-      if (element.text.trim() == "") {
+      if (element.todo.trim() == "") {
         return;
       } else {
         let taskDiv = document.createElement("div");
@@ -64,7 +64,7 @@ function getTodoList() {
 
         todoList.appendChild(taskDiv);
 
-        taskP.value = element.text.trim();
+        taskP.value = element.todo.trim();
 
         checkBox.addEventListener("click", () => {
           if (checkBox.checked == true) {
@@ -92,7 +92,7 @@ function getTodoList() {
             todoContent = localStorage.getItem("todos");
             todos = JSON.parse(todoContent);
             todos.splice(index, 1, {
-              text: editInputText,
+              todo: editInputText,
             });
             localStorage.setItem("todos", JSON.stringify(todos));
             getTodoList();
